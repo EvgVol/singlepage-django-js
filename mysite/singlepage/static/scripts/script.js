@@ -3,7 +3,7 @@ function showSection(section) {
     .then(response => response.text())
     .then(text => {
         console.log(text);
-        document.querySelector('#content').innerHTML = text;
+        document.querySelector('#content').textContent = text;
     });
 
 }
