@@ -13,4 +13,4 @@ def section(request, num):
     if 1 <= num <= 3:
         return HttpResponse(texts[num-1])
     else:
-        raise Http404("No such section")
+        raise Http404("NO SUCH CONTENT!")

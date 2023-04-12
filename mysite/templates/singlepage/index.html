@@ -4,29 +4,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Single Page</title>
-      <script>
-
-        //  Эта функция взаимодействует с Django
-        
-        function showSection(section) {   
-            fetch(`/sections/${section}`)
-            .then(response => response.text())
-            .then(text => {
-                console.log(text);
-                document.querySelector('#content').innerHTML = text;
-            });
-
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll('button').forEach(button => {
-                button.onclick = function() {
-                    showSection(this.dataset.section)
-                }
-            })
-        });
-
-    </script>
+      <script src="./singlepage/scripts/script.js"></script>
     </head>
     <body>
         <header></header>
@@ -36,7 +14,9 @@
           <button data-section="2">Section 2</button>
           <button data-section="3">Section 3</button>
 
-          <div id="content"></div>
+          <div id="content">
+
+          </div>
         </main>
         <footer></footer>
     </body>
