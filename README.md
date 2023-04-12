@@ -1,2 +1,2 @@
-# singlepage
+# Singlepage
 Single page application on Django
