@@ -20,8 +20,8 @@ git clone https://github.com/EvgVol/singlepage-django-js.git
 python3 -m venv venv
 ```
 3. Once created, a virtual environment must be activated:
-```
-. venv/Scripts/activate #On Windows
+```Python
+. venv/Scripts/activate # On Windows
 . venv/bin/activate # On Linux & MacOS
 ```
 4. Setup programs of a virtual enviroment
